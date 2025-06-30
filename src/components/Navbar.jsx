@@ -8,7 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">Novalith</div>
+     <div className="nav-logo">
+  <img src={require("../assets/logo.png")} alt="Novalith Logo" className="logo-icon" />
+  <span>Novalith Marketing</span>
+</div>
+
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><a href="#hero" onClick={toggleMenu}>Home</a></li>

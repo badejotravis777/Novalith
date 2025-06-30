@@ -71,7 +71,52 @@ const packages = [
       "Full conversion strategy"
     ],
     highlight: true
+  },
+
+  {
+    title: "Performance Suite",
+    subtitle: "For brands scaling with automation, ads & funnel clarity",
+    price: "₦180,000 / month",
+    features: [
+      "15+ custom flyers",
+      "12+ pro video creatives",
+      "Daily content + reels + stories",
+      "4 optimized ad campaigns",
+      "Advanced funnel segmentation",
+      "Weekly reporting & strategy call"
+    ],
+    highlight: true
+  },
+  {
+    title: "Brand Domination",
+    subtitle: "For brands expanding across multiple platforms & verticals",
+    price: "₦200,000 / month",
+    features: [
+      "20+ design assets (flyers, carousels)",
+      "15+ creative videos (reels, ads)",
+      "Multi-platform content strategy",
+      "Conversion-focused ad funnels",
+      "Email + WhatsApp follow-ups",
+      "Dedicated brand strategist"
+    ],
+    highlight: true
+  },
+  {
+    title: "Enterprise Impact",
+    subtitle: "For high-performing companies seeking top-tier visibility",
+    price: "₦250,000 / month",
+    features: [
+      "Unlimited creatives (visual + video)",
+      "Full-funnel marketing architecture",
+      "AI-driven customer insights",
+      "Team training & onboarding",
+      "Dedicated account manager",
+      "Monthly growth strategy blueprint"
+    ],
+    highlight: true
   }
+  
+
 ];
 
 const Packages = () => {

@@ -26,6 +26,12 @@
   animation: slideInLeft 1s ease-out;
 }
 
+.logo-icon {
+  width: 60px; /* adjust size as needed */
+  height: 60px;
+  object-fit: contain;
+}
+
 /* Default nav links */
 .nav-links {
   list-style: none;
@@ -97,6 +103,17 @@
     transition: transform 0.3s ease-in-out;
     z-index: 998;
   }
+
+  .nav-logo {
+  visibility: hidden;
+  }
+
+
+.logo-icon {
+  visibility: visible;
+}
+
+
 
   .hamburger {
     display: flex;
