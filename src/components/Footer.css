@@ -1,0 +1,95 @@
+.footer-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 40px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* 🛠 Ensure everything inside is left-aligned */
+  }
+  
+  .footer-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: left; /* 🛠 Prevent accidental override */
+  }
+  
+  .footer-contact {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: left; /* 🛠 Prevent accidental center alignment */
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-icons a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #cc9581;
+  }
+  
+  .footer-dev {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-dev span {
+    font-weight: 500;
+  }
+  
+  .dev-icon {
+    font-size: 1.3rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .dev-icon:hover {
+    color: #cc9581;
+  }
+  
+  .footer-copy {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    text-align: left; /* 🛠 Fix possible center alignment */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .footer-dev {
+      justify-content: flex-start;
+    }
+  }
+  

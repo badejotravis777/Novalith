@@ -1,0 +1,83 @@
+.clients-section {
+    background-color: #1a1a1a;
+    padding: 100px 40px;
+    color: white;
+  }
+  
+  .clients-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .clients-header h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #cc9581;
+    margin-bottom: 10px;
+  }
+  
+  .clients-header p {
+    font-size: 1.05rem;
+    color: #ccc;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .client-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px; /* Reduced to allow more logo space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* Increased height */
+    max-width: 180px; /* Slightly wider */
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .client-box img {
+    max-height: 100px; /* Increased logo size */
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    padding: 0 5px; /* Small horizontal padding */
+  }
+  
+  .client-box:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .clients-header h2 {
+      font-size: 2rem;
+    }
+  
+    .clients-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+    }
+  
+    .client-box {
+      height: 80px;
+      padding: 15px;
+    }
+  
+    .client-box img {
+      max-height: 45px;
+    }
+  }
+  

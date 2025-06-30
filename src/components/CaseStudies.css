@@ -1,0 +1,114 @@
+.case-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 100px 40px;
+    overflow: hidden;
+  }
+  
+  .case-header {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .case-header h2 {
+    font-size: 2.5rem;
+    color: #cc9581;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .case-header h2 span {
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Carousel Setup */
+  .case-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .case-slide {
+    scroll-snap-align: start;
+    min-width: 400px;
+    height: 250px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+  }
+  
+  .case-slide:hover {
+    transform: scale(1.02);
+  }
+  
+  .case-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .case-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Text Overlay - BOLD and LEFT POSITIONED */
+  .case-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    padding: 20px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  .case-overlay h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+  
+  .case-overlay p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #cccccc;
+    max-width: 90%;
+  }
+  
+  @media (max-width: 768px) {
+    .case-slide {
+      min-width: 300px;
+      height: 200px;
+    }
+  
+    .case-overlay h3 {
+      font-size: 1rem;
+    }
+  
+    .case-overlay p {
+      font-size: 0.8rem;
+    }
+  }
+  
