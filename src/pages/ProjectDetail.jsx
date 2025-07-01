@@ -112,8 +112,10 @@ const ProjectDetail = () => {
   muted
   loop
   playsInline
+  preload="auto"
   className="case-video"
 />
+
 
                   <div className="case-overlay">
                     <h4>{item.title}</h4>

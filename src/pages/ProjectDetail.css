@@ -86,13 +86,13 @@
     justify-content: center;
   } */
   
-  .case-slide {
+  /* .case-slide {
     width: 300px;
     cursor: pointer;
     position: relative;
-  }
+  } */
   
-  .case-video-wrapper {
+  /* .case-video-wrapper {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -102,15 +102,15 @@
     width: 100%;
     height: auto;
     display: block;
-  }
-  
+  } */
+/*   
   .case-overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 15px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  }
+  } */
   
   .case-overlay h4 {
     margin: 0;
