@@ -1,0 +1,244 @@
+.project-detail {
+    background: #0d0d0d;
+    color: #fff;
+    padding: 100px 20px;
+    max-width: 2200px;
+    margin: auto;
+  }
+  
+  .project-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-header h1 {
+    font-size: 2.8rem;
+    color: #cc9581;
+    margin-bottom: 10px;
+  }
+  
+  .project-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* LAYOUT LEFT: video + description side-by-side */
+  .project-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+  
+  .project-video-container {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  
+  .project-main-video {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-breakdown {
+    flex: 1.5;
+    min-width: 300px;
+    padding-right: 10px;
+  }
+  
+  .project-section {
+    margin-bottom: 30px;
+  }
+  
+  .project-section h3 {
+    color: #cc9581;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    border-left: 4px solid #cc9581;
+    padding-left: 10px;
+  }
+  
+  .project-section p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #eee;
+  }
+  
+  .more-projects {
+    text-align: center;
+  }
+  
+  .more-projects h2 {
+    color: #cc9581;
+    margin-bottom: 30px;
+  }
+  
+  /* Restore your original video-style layout */
+  /* .case-carousel {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+  
+  .case-slide {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .case-video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .case-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .case-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  }
+  
+  .case-overlay h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .case-overlay p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  .not-found {
+    color: white;
+    text-align: center;
+    margin: 100px 0;
+    font-size: 1.6rem;
+  }
+  
+  @media (max-width: 768px) {
+    .project-header h1 {
+      font-size: 2rem;
+    }
+  
+    .project-body {
+      flex-direction: column;
+    }
+  
+    .project-main-video {
+      max-width: 100%;
+    }
+  }
+  
+
+ /* Client Section */
+.client-section {
+    background-color: #1a1a1a;
+    border-left: 4px solid #4caf50;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(76, 175, 80, 0.15);
+  }
+  .client-section h3 {
+    color: #4caf50;
+  }
+  .client-section p {
+    color: #d8ffd8;
+  }
+  
+  /* Goals Section */
+  .goals-section {
+    background-color: #191919;
+    border-left: 4px solid #ff9800;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.15);
+  }
+  .goals-section h3 {
+    color: #ffb74d;
+  }
+  .goals-section p {
+    color: #ffeccc;
+  }
+  
+  /* Strategy Section */
+  .strategy-section {
+    background-color: #181818;
+    border-left: 4px solid #03a9f4;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(3, 169, 244, 0.15);
+  }
+  .strategy-section h3 {
+    color: #4fc3f7;
+  }
+  .strategy-section p {
+    color: #e0f7ff;
+  }
+  
+  /* Implementation Section */
+  .implementation-section {
+    background-color: #171717;
+    border-left: 4px solid #9c27b0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(156, 39, 176, 0.15);
+  }
+  .implementation-section h3 {
+    color: #ce93d8;
+  }
+  .implementation-section p {
+    color: #f3e6f8;
+  }
+  
+  /* Results Section */
+  .results-section {
+    background-color: #161616;
+    border-left: 4px solid #8bc34a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(139, 195, 74, 0.15);
+  }
+  .results-section h3 {
+    color: #aed581;
+  }
+  .results-section p {
+    color: #f1ffe7;
+  }
+  
+  /* Industry Section */
+  .industry-section {
+    background-color: #202020;
+    border-left: 4px solid #ff5722;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(255, 87, 34, 0.15);
+  }
+  .industry-section h3 {
+    color: #ff8a65;
+  }
+  .industry-section p {
+    color: #ffe6e0;
+  }
+  

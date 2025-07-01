@@ -2,7 +2,7 @@
     background-color: #1a1a1a;
     color: white;
     padding: 100px 40px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   .case-header {
@@ -25,15 +25,27 @@
     margin-top: 10px;
   }
   
-  /* Carousel Setup */
+  /* Horizontal scroll area */
   .case-carousel {
     display: flex;
+    flex-wrap: nowrap; /* critical: force items on single line */
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 30px;
     padding-bottom: 20px;
     max-width: 1200px;
     margin: auto;
+  }
+  
+  .case-carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .case-carousel::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
   }
   
   .case-slide {
@@ -41,7 +53,7 @@
     min-width: 400px;
     height: 250px;
     position: relative;
-    flex: 0 0 auto;
+    flex: 0 0 auto; /* necessary for horizontal scrolling */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
@@ -65,7 +77,6 @@
     display: block;
   }
   
-  /* Text Overlay - BOLD and LEFT POSITIONED */
   .case-overlay {
     position: absolute;
     bottom: 0;
@@ -97,6 +108,7 @@
     max-width: 90%;
   }
   
+  /* Responsive tweaks */
   @media (max-width: 768px) {
     .case-slide {
       min-width: 300px;

@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 Modal.setAppElement('#root'); // Required for accessibility
 
-const ScheduleSection = () => {
+ const ScheduleSection = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',

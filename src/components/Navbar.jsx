@@ -21,6 +21,16 @@ const Navbar = () => {
         <li><a href="#cases" onClick={toggleMenu}>Case Studies</a></li>
         <li><a href="#packages" onClick={toggleMenu}>Packages</a></li>
         <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+        <li>
+    <a
+      href="https://drive.google.com/file/d/1inNtyF7JA698NhB6NULkYEzdtiNda-AI/view?usp=drivesdk"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={toggleMenu}
+    >
+      Portfolio
+    </a>
+  </li>
       </ul>
 
       <div className="hamburger" onClick={toggleMenu}>

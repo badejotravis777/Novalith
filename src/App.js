@@ -1,4 +1,9 @@
-// import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// Pages
+import ProjectDetail from "./pages/ProjectDetail";
+
+// Components (used inside HomePage)
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,9 +15,10 @@ import Faq from './components/Faq';
 import ScheduleSection from './components/ScheduleSection';
 import Footer from './components/Footer';
 
-function App() {
+// HomePage component to wrap homepage layout
+const HomePage = () => {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Hero />
       <About />
@@ -23,8 +29,18 @@ function App() {
       <Faq />
       <ScheduleSection />
       <Footer />
-      {/* Your Components will go here */}
-    </div>
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
