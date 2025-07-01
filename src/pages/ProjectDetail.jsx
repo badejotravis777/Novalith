@@ -71,15 +71,16 @@ const ProjectDetail = () => {
 
         <div className="project-body">
           <div className="project-video-container">
-            <video
-              src={project.video}
-              autoPlay
-              muted
-              loop
-              controls
-              className="project-main-video"
-              poster="/video-poster.jpg"
-            />
+          <video
+  src={project.video}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="project-main-video"
+  poster="/video-poster.jpg"
+/>
+
           </div>
 
           <div className="project-breakdown">
