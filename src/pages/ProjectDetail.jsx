@@ -106,13 +106,15 @@ const ProjectDetail = () => {
                 onClick={() => navigate(`/projects/${item.slug}`)}
               >
                 <div className="case-video-wrapper">
-                  <video
-                    src={item.video}
-                    autoPlay
-                    muted
-                    loop
-                    className="case-video"
-                  />
+                <video
+  src={item.video}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="case-video"
+/>
+
                   <div className="case-overlay">
                     <h4>{item.title}</h4>
                     <p>{item.subtitle}</p>
