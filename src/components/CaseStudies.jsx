@@ -66,12 +66,44 @@ export const caseStudies = [
       • 10% increase in retention
       `
       },      
-    {
-      title: "Risky T – A Safer Way to Transact",
-      subtitle: "Empowering secure digital transactions with trust and transparency.",
-      video: require("../assets/riskyt2.mp4"),
-     
-    },
+      {
+        title: "WoodHub 89 – Crafted for Comfort",
+        subtitle: "Furniture built with precision, passion, and personality.",
+        video: require("../assets/woodhub1.mp4"),
+        slug: "woodhub-89-crafted-comfort",
+        description: `
+      Client -  WoodHub 89
+      Industry: Furniture and Interior Design
+      Goals:
+      • 
+      
+      Goals:
+      • Increase online visibility
+      • Drive sales for furniture and interior designs
+      • Build brand presence and recognition on social media
+      
+      Our Strategy:  
+      • Develop engaging content (high-quality images, videos, and
+        posts)
+      • Run targeted Facebook and Instagram ads to increase brand
+      visibility
+      • Implement a content marketing strategy to promote seasonal
+      sales and new arrivals
+      
+      Implementation:  
+      • Produced 10 flyer designs for promotions and offers
+      • Created 3 professional videos showcasing new products 
+      • Set up advanced ad campaigns with targeted retargeting
+      • Used carousel ads and sponsored stories to reach a broader
+      audience  
+      
+      Results:  
+      • Increased brand visibility on social media by 50%  
+      • Sales increased by 30% during peak promotional periods 
+      •Social media engagement improved by 40%, with higher
+      interaction on posts
+      `
+      },      
     {
         title: "Authentic Solar City",
         subtitle: "RENEWABLE ENERGY",
@@ -103,12 +135,37 @@ export const caseStudies = [
       `
       },
       
-    {
-      title: "Authentic Solar",
-      subtitle: "RENEWABLE ENERGY",
-      video: require("../assets/authenticsolar1.mp4"),
-     
-    }
+      {
+        title: "Sustainable Palm – Greener Futures",
+        subtitle: "Promoting eco-conscious palm oil practices for a better tomorrow.",
+        video: require("../assets/sustainable1.mp4"),
+        slug: "sustainable-palm-greener-futures",
+        description: `
+      Client -  Sustainable Palm
+      Industry: Agriculture and Food Production
+      
+      Goals:
+      • Promote the importance of sustainable palm oil
+      • Increase consumer awareness about eco-friendly practices
+      • Build brand loyalty and encourage ethical purchases
+      
+      Our Strategy:  
+      • Build content around the benefits of sustainable palm oil
+      • Educate consumers on eco-friendly farming practices through visual storytelling
+      • Create compelling ads focusing on the environmental impact of palm oil
+      
+      Implementation:  
+      • Developed a content strategy featuring educational videos and infographics
+      • Ran ads on Facebook to highlight sustainability benefits
+      • Collaborated with eco-conscious influencers to spread awareness
+      • Regularly updated the audience with behind-the-scenes content about ethical production
+      
+      Results:  
+      • Raised awareness among 10,000+ consumers about sustainable palm oil
+      • Social media engagement grew by 50% 
+      •Positive feedback from customers increased by 35%
+      `
+      },      
   ];
   
   const CaseStudies = () => {
