@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const images = [
   require("../assets/about1.png"),
@@ -26,7 +27,7 @@ const About = () => {
             Novalith is a solution-driven, full-service agency combining digital strategy and marketing innovation
             to fuel business growth. We deliver strategies that turn challenges into opportunities for success.
           </p>
-          <a href="#contact" className="about-button">DISCOVER MORE</a>
+          <Link to="/about-page" className="about-button">DISCOVER MORE</Link>
         </div>
         <div className="about-image">
           <img src={images[currentImage]} alt="About Us" />

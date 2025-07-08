@@ -1,0 +1,228 @@
+.waitlist-section {
+    padding: 120px 40px;
+    background-color: #000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .waitlist-inner {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+  }
+  
+  .waitlist-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .stratos-logo {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #cc9581;
+    margin-bottom: 8px;
+  }
+  
+  .section-tagline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.05rem;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 600px;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    color: #eee;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .stratos-logo {
+    width: 80px;
+    margin-bottom: 20px;
+    display: block;
+    background: #111; /* or #000 to match section */
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .credit-text strong {
+    color: #cc9581;
+  }
+  
+  
+  .credit-text {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 28px;
+  }
+  
+  .countdown-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px 24px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    max-width: 480px;
+  }
+  
+  .countdown-box div {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .countdown-box strong {
+    font-size: 1.6rem;
+    color: #cc9581;
+    display: block;
+  }
+  
+  .waitlist-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .waitlist-form input,
+  .waitlist-form select,
+  .waitlist-form textarea {
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+  }
+  
+  .waitlist-form input::placeholder,
+  .waitlist-form textarea::placeholder {
+    color: #888;
+  }
+  
+  .waitlist-form input:focus,
+  .waitlist-form select:focus,
+  .waitlist-form textarea:focus {
+    outline: none;
+    border-color: #cc9581;
+  }
+  
+  .input-error {
+    border-color: #e53935 !important;
+    background-color: #1a0000;
+  }
+  
+  .error-text {
+    color: #e53935;
+    font-size: 0.85rem;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, #cc9581, #a3675e);
+    color: white;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #a3675e;
+    transform: translateY(-2px);
+  }
+  
+  .thank-you {
+    padding: 30px 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .thank-you h3 {
+    color: #cc9581;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .thank-you p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .feature-icon {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #cc9581, #a3675e);
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .feature-icon::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .waitlist-inner {
+      flex-direction: column;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 0.95rem;
+    }
+  
+    .countdown-box {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  

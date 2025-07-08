@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Pages
 import ProjectDetail from "./pages/ProjectDetail";
+import AboutPage from "./pages/AboutPage";
 
 // Components (used inside HomePage)
 import Navbar from './components/Navbar';
@@ -17,6 +18,7 @@ import ScheduleSection from './components/ScheduleSection';
 import Footer from './components/Footer';
 import FloatingWaitlistButton from './components/FloatingWaitlistButton';
 import WaitlistModal from './components/WaitlistModal';
+import WaitlistSection from "./components/WaitlistSection";
 
 // HomePage component to wrap homepage layout
 const HomePage = ({ onOpenModal }) => {
@@ -28,6 +30,7 @@ const HomePage = ({ onOpenModal }) => {
       <Services />
       <CaseStudies />
       <Packages />
+      <WaitlistSection />
       <Clients />
       <Faq />
       <ScheduleSection />
@@ -45,6 +48,7 @@ function App() {
       {modalOpen && <WaitlistModal onClose={() => setModalOpen(false)} />}
       <Routes>
         <Route path="/" element={<HomePage onOpenModal={() => setModalOpen(true)} />} />
+        <Route path="/about-page" element={<AboutPage />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </Router>
