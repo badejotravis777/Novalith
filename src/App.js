@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Pages
@@ -14,9 +15,11 @@ import Clients from './components/Clients';
 import Faq from './components/Faq';
 import ScheduleSection from './components/ScheduleSection';
 import Footer from './components/Footer';
+import FloatingWaitlistButton from './components/FloatingWaitlistButton';
+import WaitlistModal from './components/WaitlistModal';
 
 // HomePage component to wrap homepage layout
-const HomePage = () => {
+const HomePage = ({ onOpenModal }) => {
   return (
     <>
       <Navbar />
@@ -29,15 +32,19 @@ const HomePage = () => {
       <Faq />
       <ScheduleSection />
       <Footer />
+      <FloatingWaitlistButton onOpen={onOpenModal} />
     </>
   );
 };
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <Router>
+      {modalOpen && <WaitlistModal onClose={() => setModalOpen(false)} />}
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage onOpenModal={() => setModalOpen(true)} />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </Router>
