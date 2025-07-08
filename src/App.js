@@ -16,8 +16,6 @@ import Clients from './components/Clients';
 import Faq from './components/Faq';
 import ScheduleSection from './components/ScheduleSection';
 import Footer from './components/Footer';
-import FloatingWaitlistButton from './components/FloatingWaitlistButton';
-import WaitlistModal from './components/WaitlistModal';
 import WaitlistSection from "./components/WaitlistSection";
 
 // HomePage component to wrap homepage layout
@@ -35,17 +33,17 @@ const HomePage = ({ onOpenModal }) => {
       <Faq />
       <ScheduleSection />
       <Footer />
-      <FloatingWaitlistButton onOpen={onOpenModal} />
+
     </>
   );
 };
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [ setModalOpen] = useState(false);
 
   return (
     <Router>
-      {modalOpen && <WaitlistModal onClose={() => setModalOpen(false)} />}
+      
       <Routes>
         <Route path="/" element={<HomePage onOpenModal={() => setModalOpen(true)} />} />
         <Route path="/about-page" element={<AboutPage />} />
