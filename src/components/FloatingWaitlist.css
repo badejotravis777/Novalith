@@ -27,7 +27,7 @@
     backdrop-filter: blur(4px);
     z-index: 999;
     overflow-y: auto; /* Allow scrolling if needed */
-    padding: 100px 60px 40px; /* ✅ Adds top space so modal doesn’t hit navbar */
+    padding: 100px 30px 60px;/* ✅ Adds top space so modal doesn’t hit navbar */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* ✅ Push modal down, not centered vertically */
@@ -46,12 +46,12 @@
     opacity: 1;
     font-family: 'Inter', sans-serif;
     border: 1px solid #e6e2de;
-    /* ✅ New fixes */
-  max-height: 90vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-
+  
+    /* ✅ Make the modal scrollable on its own */
+    max-height: 100vh;
+    overflow-y: auto;
   }
+  
   
   .close-modal {
     position: absolute;
@@ -194,7 +194,7 @@
       background: rgba(0, 0, 0, 0.65);
       backdrop-filter: blur(6px);
       overflow-y: auto; 
-      padding: 120px 30px 20px;
+      padding: 120px 20px 80px; 
     }
   
     .waitlist-modal.stratos-modal {
