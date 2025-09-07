@@ -11,8 +11,11 @@ import logo9 from "../assets/Nature.png";
 import logo10 from "../assets/Magpie.png";
 import logo11 from "../assets/glfc.jpg";
 import logo12 from "../assets/Ebudon.PNG";
+import logo13 from "../assets/pazino.png";
+import logo14 from "../assets/avee.png";
+import logo15 from "../assets/mrslyz.png";
 
-const clientLogos = [logo1, logo2, logo4, logo6, logo7, logo8, logo9, logo10, logo11, logo12];
+const clientLogos = [logo1, logo2, logo4, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15];
 
 const Clients = () => {
   return (
