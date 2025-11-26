@@ -65,9 +65,15 @@ const Hero = () => {
         <p className="hero-subtitle">
           Bold campaigns. Targeted Ads. Real Results.
         </p>
-        <button className="cta-button" onClick={() => setModalIsOpen(true)}>
-          Book a Free Strategy Call
-        </button>
+        <a 
+  href="https://wa.me/2349128430714" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="cta-button"
+>
+  MESSAGE US ON WHATSAPP
+</a>
+
       </div>
 
       <Modal

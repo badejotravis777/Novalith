@@ -63,9 +63,15 @@ Modal.setAppElement('#root'); // Required for accessibility
         </p>
       </div>
       <div className="button-area">
-        <button onClick={() => setModalIsOpen(true)} className="schedule-button">
-          SCHEDULE A CALL
-        </button>
+      <a 
+  href="https://wa.me/2349128430714" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="schedule-button"
+>
+  MESSAGE US ON WHATSAPP
+</a>
+
       </div>
 
       <Modal
