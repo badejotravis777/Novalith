@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutPage.css";
 import Navbar from "../components/Navbar"; // Adjust path based on your project
 import Footer from "../components/Footer";
+import ScheduleSection from "../components/ScheduleSection";
 
 const AboutPage = () => {
   return (
@@ -72,7 +73,7 @@ const AboutPage = () => {
           </ol>
         </div>
       </section>
-
+<ScheduleSection />
       <Footer />
     </>
   );

@@ -3,21 +3,6 @@ import "./Packages.css";
 
 const packages = [
   {
-    title: "Starter Lite",
-    subtitle: "For small businesses just starting with digital visibility",
-    price: "₦40,000 / month",
-    features: [
-      "3 custom flyers",
-      "1 short promotional video",
-      "Basic page setup",
-      "1 ad setup & optimization",
-      "Sales-driven captions",
-      "1 post/week social management",
-      "One-time performance review"
-    ],
-    highlight: true
-  },
-  {
     title: "Starter",
     subtitle: "For brands building a consistent presence & audience",
     price: "₦50,000 / month",
