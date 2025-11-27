@@ -60,7 +60,7 @@ const Hero = () => {
 
       <div className="hero-content">
         <h1 className="hero-title">
-          Growth Engine <span>For Brands</span>
+          Affordable Digital<span> Marketing Packages</span>
         </h1>
         <p className="hero-subtitle">
           Bold campaigns. Targeted Ads. Real Results.
